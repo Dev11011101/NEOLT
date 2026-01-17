@@ -281,6 +281,36 @@
             </div>
         </div>
 
+        <div class="category">
+            <h2 class="category-title">✅ Grammar Check</h2>
+            <div class="tools-grid">
+                <a href="https://www.grammarcheck.com" class="tool-btn" target="_blank">
+                    <span>GrammarCheck.com</span>
+                </a>
+                <a href="https://www.grammarcheck.net/editor/" class="tool-btn" target="_blank">
+                    <span>GrammarCheck.net</span>
+                </a>
+                <a href="https://quillbot.com/grammar-check" class="tool-btn" target="_blank">
+                    <span>QuillBot Grammar Check</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">📝 Writing Analysis</h2>
+            <div class="tools-grid">
+                <a href="https://www.analyzemywriting.com" class="tool-btn" target="_blank">
+                    <span>Analyze My Writing</span>
+                </a>
+                <a href="https://www.iwl.me" class="tool-btn" target="_blank">
+                    <span>I Write Like</span>
+                </a>
+                <a href="https://www.paperrater.com/free_paper_grader" class="tool-btn" target="_blank">
+                    <span>PaperRater</span>
+                </a>
+            </div>
+        </div>
+
         <div class="console-panel">
             <p class="console-text">
                 ⚡ TEMPORAL TRANSLATION SYSTEM ONLINE ⚡<br>
@@ -304,7 +334,7 @@
                 if (isSearchable && searchTerm) {
                     window.open(baseUrl + encodeURIComponent(searchTerm), '_blank');
                 } else {
-                    window.open(baseUrl.split('?')[0].split('search')[0], '_blank');
+                    window.open(this.getAttribute('href') || baseUrl.split('?')[0].split('search')[0], '_blank');
                 }
             });
         });
